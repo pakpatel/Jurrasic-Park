@@ -1,0 +1,19 @@
+   XDEF  IRQ_ISR,button_val
+     XREF IRQCR,emergency_flag  
+
+
+
+
+MY_VARIABLE:SECTION
+button_val: ds.w 1
+
+
+
+MY_CODE:SECTION
+
+IRQ_ISR:   ldaa emergency_flag
+           cmpa #0
+           lbge END
+           movb #1,button_val
+         
+END:      RTI   

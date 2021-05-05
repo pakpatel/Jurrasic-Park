@@ -1,0 +1,9 @@
+
+    XDEF  Delay             
+    
+Delay:  pshy
+        ldy     #1000
+loop:   dey                
+        bne     loop           
+        puly    
+        rts    

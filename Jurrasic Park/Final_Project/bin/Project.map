@@ -1,0 +1,655 @@
+*** EVALUATION ***
+PROGRAM "C:\Users\partw\Documents\Final_Project\bin\Project.abs"
+
+*********************************************************************************************
+TARGET SECTION
+---------------------------------------------------------------------------------------------
+Processor   : Freescale HC12
+Memory Model: SMALL
+File Format : ELF\DWARF 2.0
+Linker      : SmartLinker V-5.0.52 Build 15249, Sep  7 2015
+
+*********************************************************************************************
+FILE SECTION
+---------------------------------------------------------------------------------------------
+main.asm.o                              Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+KeyPad.asm.o                            Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+lcddisp.c.o                             Model: SMALL,         Lang: ANSI-C,        Compiler Version: ANSI-C/cC++ Compiler for HC12 V-5.0.46 Build 15249, Sep  7 2015
+potentiometer.c.o                       Model: SMALL,         Lang: ANSI-C,        Compiler Version: ANSI-C/cC++ Compiler for HC12 V-5.0.46 Build 15249, Sep  7 2015
+traveling.asm.o                         Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+Pen3.asm.o                              Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+Pen2.asm.o                              Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+Pen1.asm.o                              Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+feed1.asm.o                             Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+feed2.asm.o                             Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+feed3.asm.o                             Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+SendsChr.c.o                            Model: SMALL,         Lang: ANSI-C,        Compiler Version: ANSI-C/cC++ Compiler for HC12 V-5.0.46 Build 15249, Sep  7 2015
+Delay2.asm.o                            Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+roar1.asm.o                             Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+roar2.asm.o                             Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+roar3.asm.o                             Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+emergency_menu.asm.o                    Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+RTI_ISR.asm.o                           Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+Gameover.asm.o                          Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+IRQ_ISR.asm.o                           Model: SMALL,         Lang: Assembler,     Compiler Version: Assembler for HC12 V-5.0.32 Build 15249, Sep  7 2015
+
+*********************************************************************************************
+STARTUP SECTION
+---------------------------------------------------------------------------------------------
+Entry point: 0xC000 (Entry)
+
+*********************************************************************************************
+SECTION-ALLOCATION SECTION
+Section Name                    Size  Type     From       To       Segment
+---------------------------------------------------------------------------------------------
+.init                            800     R     0xC000     0xC31F   ROM_C000
+.text                            301     R     0xC320     0xC44C   ROM_C000
+.stack                           256   R/W      0x400      0x4FF   RAM
+.bss                              20   R/W      0x500      0x513   RAM
+MY_EXTENDED_RAM                   64     R     0xC44D     0xC48C   ROM_C000
+MY_CONSTANT                       88     R     0xC48D     0xC4E4   ROM_C000
+MY_VAR                             1   R/W      0x514      0x514   RAM
+.common                            2   R/W      0x515      0x516   RAM
+MY_CODE                         4975     R     0xC4E5     0xD853   ROM_C000
+Delay2.asm._SEC000000              9     R     0xD854     0xD85C   ROM_C000
+My_Variable                        1     R     0xD85D     0xD85D   ROM_C000
+MY_Constant                        4     R     0xD85E     0xD861   ROM_C000
+My_code                          292     R     0xD862     0xD985   ROM_C000
+MY_VARIABLE                       18   R/W      0x517      0x528   RAM
+.vectSeg0_vect                     4     R     0xFFF0     0xFFF3   .vectSeg0
+.vectSeg1_vect                     2     R     0xFFFE     0xFFFF   .vectSeg1
+
+Summary of section sizes per section type:
+READ_ONLY (R):        198C (dec:     6540)
+READ_WRITE (R/W):      129 (dec:      297)
+
+*********************************************************************************************
+VECTOR-ALLOCATION SECTION
+    Address     InitValue   InitFunction
+---------------------------------------------------------------------------------------------
+     0xFFF0        0xD862   RTI_ISR
+     0xFFF2        0xD845   IRQ_ISR
+     0xFFFE        0xC000   Entry
+
+*********************************************************************************************
+OBJECT-ALLOCATION SECTION
+     Name               Module                 Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+MODULE:                 -- main.asm.o --
+- PROCEDURES:
+     Entry                                     C000     111     273       0   .init       
+     _Startup                                  C000       0       0       0   .init       
+     main                                      C000       0       0       0   .init       
+     pass1                                     C111      18      24       0   .init       
+     pass2                                     C129      18      24       0   .init       
+     pass3                                     C141      18      24       0   .init       
+     pass4                                     C159      B8     184       0   .init       
+     MainMenu                                  C211      BB     187       0   .init       
+     option2                                   C2CC      13      19       0   .init       
+     option3                                   C2DF      13      19       0   .init       
+     option4                                   C2F2      12      18       0   .init       
+     check2                                    C304       C      12       0   .init       
+     check3                                    C310       C      12       0   .init       
+     check4                                    C31C       4       4       0   .init       
+- VARIABLES:
+     keyval                                    C44D       1       1      17   MY_EXTENDED_RAM
+     disp                                      C44E      21      33     937   MY_EXTENDED_RAM
+     travel                                    C46F       1       1       8   MY_EXTENDED_RAM
+     emergency_flag                            C470       1       1       9   MY_EXTENDED_RAM
+- LABELS:
+     __SEG_END_SSTACK                           500       0       0       1               
+     IRQCR                                       1E       0       0       0   .text       
+     RTIFLG                                      37       0       0       1   .text       
+MODULE:                 -- KeyPad.asm.o --
+- PROCEDURES:
+     lut                                       C48D      10      16       1   MY_CONSTANT 
+     seq                                       C49D       4       4       2   MY_CONSTANT 
+     KeyPad                                    C4A1      12      18      15   MY_CONSTANT 
+     st                                        C4B3       3       3       0   MY_CONSTANT 
+     Scan                                      C4B6      1E      30       0   MY_CONSTANT 
+     lutloop                                   C4D4       A      10       0   MY_CONSTANT 
+     store                                     C4DE       7       7       0   MY_CONSTANT 
+- VARIABLES:
+     value                                      514       1       1       2   MY_VAR      
+MODULE:                 -- lcddisp.c.o --
+- PROCEDURES:
+     delay_ms                                  C320      17      23       5   .text       
+     init_LCD                                  C337      52      82       1   .text       
+     display_string                            C389      38      56      43   .text       
+     Delay                                     C3C1      1F      31       1   .text       
+     epulse                                    C3E0      24      36       3   .text       
+     sendCommand                               C404       F      15       7   .text       
+- VARIABLES:
+     data                                       500       2       2       4   .bss        
+     _DDRAD                                     502       2       2       1   .bss        
+     _PTAD                                      504       2       2       4   .bss        
+     _DDRM                                      506       1       1       1   .bss        
+     _PTM                                       507       1       1       5   .bss        
+MODULE:                 -- potentiometer.c.o --
+- PROCEDURES:
+     read_pot                                  C413      18      24       8   .text       
+- VARIABLES:
+     pot_value                                  515       2       2       9   .common     
+     _ATDCTL23                                  508       2       2       1   .bss        
+     _ATDCTL45                                  50A       2       2       1   .bss        
+     _ATDSTAT0                                  50C       1       1       1   .bss        
+     _ATDDR0                                    50D       2       2       1   .bss        
+MODULE:                 -- traveling.asm.o --
+- PROCEDURES:
+     traveling                                 C4E5      B5     181       6   MY_CODE     
+     start                                     C59A      F1     241       0   MY_CODE     
+     pen_select                                C68B      16      22       0   MY_CODE     
+     pen1                                      C6A1       3       3       0   MY_CODE     
+     pen2                                      C6A4       3       3       0   MY_CODE     
+     pen3                                      C6A7       3       3       0   MY_CODE     
+     end                                       C6AA       1       1       0   MY_CODE     
+- VARIABLES:
+     travel_flag                               C471       1       1       4   MY_EXTENDED_RAM
+MODULE:                 -- Pen3.asm.o --
+- PROCEDURES:
+     Pen3                                      C6AB      C6     198       1   MY_CODE     
+     option2                                   C771      B5     181       0   MY_CODE     
+     option3                                   C826      B5     181       0   MY_CODE     
+     option4                                   C8DB       D      13       0   MY_CODE     
+     check2                                    C8E8       7       7       0   MY_CODE     
+     check3                                    C8EF       D      13       0   MY_CODE     
+     check4                                    C8FC       4       4       0   MY_CODE     
+- VARIABLES:
+     seq1                                      C472       9       9       1   MY_EXTENDED_RAM
+MODULE:                 -- Pen2.asm.o --
+- PROCEDURES:
+     Pen2                                      C900      C6     198       1   MY_CODE     
+     option2                                   C9C6      B5     181       0   MY_CODE     
+     option3                                   CA7B      B5     181       0   MY_CODE     
+     option4                                   CB30       D      13       0   MY_CODE     
+     check2                                    CB3D       7       7       0   MY_CODE     
+     check3                                    CB44       D      13       0   MY_CODE     
+     check4                                    CB51       4       4       0   MY_CODE     
+- VARIABLES:
+     seq1                                      C47B       9       9       1   MY_EXTENDED_RAM
+MODULE:                 -- Pen1.asm.o --
+- PROCEDURES:
+     Pen1                                      CB55      C6     198       1   MY_CODE     
+     option2                                   CC1B      B5     181       0   MY_CODE     
+     option3                                   CCD0      B5     181       0   MY_CODE     
+     option4                                   CD85       D      13       0   MY_CODE     
+     check2                                    CD92       7       7       0   MY_CODE     
+     check3                                    CD99       D      13       0   MY_CODE     
+     check4                                    CDA6       4       4       0   MY_CODE     
+- VARIABLES:
+     seq1                                      C484       9       9       1   MY_EXTENDED_RAM
+MODULE:                 -- feed1.asm.o --
+- PROCEDURES:
+     feed1                                     CDAA      BB     187       1   MY_CODE     
+     option2                                   CE65      B5     181       0   MY_CODE     
+     option3                                   CF1A      B5     181       0   MY_CODE     
+     option4                                   CFCF      11      17       0   MY_CODE     
+     check2                                    CFE0       B      11       0   MY_CODE     
+     check3                                    CFEB       E      14       0   MY_CODE     
+     check4                                    CFF9       1       1       0   MY_CODE     
+- VARIABLES:
+MODULE:                 -- feed2.asm.o --
+- PROCEDURES:
+     feed2                                     CFFA      BB     187       1   MY_CODE     
+     option2                                   D0B5      B5     181       0   MY_CODE     
+     option3                                   D16A      B5     181       0   MY_CODE     
+     option4                                   D21F      11      17       0   MY_CODE     
+     check2                                    D230       B      11       0   MY_CODE     
+     check3                                    D23B       E      14       0   MY_CODE     
+     check4                                    D249       1       1       0   MY_CODE     
+- VARIABLES:
+MODULE:                 -- feed3.asm.o --
+- PROCEDURES:
+     feed3                                     D24A      BB     187       1   MY_CODE     
+     option2                                   D305      B5     181       0   MY_CODE     
+     option3                                   D3BA      B5     181       0   MY_CODE     
+     option4                                   D46F      11      17       0   MY_CODE     
+     check2                                    D480       B      11       0   MY_CODE     
+     check3                                    D48B       E      14       0   MY_CODE     
+     check4                                    D499       1       1       0   MY_CODE     
+- VARIABLES:
+MODULE:                 -- SendsChr.c.o --
+- PROCEDURES:
+     SendsChr                                  C42B       8       8       6   .text       
+     PlayTone                                  C433      1A      26       6   .text       
+- VARIABLES:
+     tone                                       50F       2       2       2   .bss        
+     tone_count                                 511       2       2       3   .bss        
+     _PTT                                       513       1       1       2   .bss        
+MODULE:                 -- Delay2.asm.o --
+- PROCEDURES:
+     Delay2                                    D854       4       4       1   Delay2.asm._SEC000000
+     loop                                      D858       5       5       0   Delay2.asm._SEC000000
+- VARIABLES:
+MODULE:                 -- roar1.asm.o --
+- PROCEDURES:
+     roar1                                     D49A       4       4       3   MY_CODE     
+     nextval                                   D49E      11      17       0   MY_CODE     
+- VARIABLES:
+MODULE:                 -- roar2.asm.o --
+- PROCEDURES:
+     roar2                                     D4AF       4       4       3   MY_CODE     
+     nextval                                   D4B3      11      17       0   MY_CODE     
+- VARIABLES:
+MODULE:                 -- roar3.asm.o --
+- PROCEDURES:
+     roar3                                     D4C4       4       4       3   MY_CODE     
+     nextval                                   D4C8      11      17       0   MY_CODE     
+- VARIABLES:
+MODULE:                 -- emergency_menu.asm.o --
+- PROCEDURES:
+     emergency_menu                            D4D9      BC     188       3   MY_CODE     
+     button_loop                               D595      B2     178       0   MY_CODE     
+     pass1                                     D647      18      24       0   MY_CODE     
+     pass2                                     D65F      18      24       0   MY_CODE     
+     pass3                                     D677      18      24       0   MY_CODE     
+     pass4                                     D68F      B8     184       0   MY_CODE     
+     end                                       D747      25      37       0   MY_CODE     
+- VARIABLES:
+     var_1                                     D85D       1       1       1   My_Variable 
+MODULE:                 -- RTI_ISR.asm.o --
+- PROCEDURES:
+     RTI_ISR                                   D862      33      51       0   My_code     
+     danger                                    D895      27      39       0   My_code     
+     travel_ISR                                D8BC      1D      29       0   My_code     
+     dino_ISR                                  D8D9      44      68       0   My_code     
+     check2                                    D91D       8       8       0   My_code     
+     check3                                    D925      14      20       0   My_code     
+     set_emergency1                            D939       F      15       0   My_code     
+     set_emergency2                            D948       F      15       0   My_code     
+     set_emergency3                            D957       B      11       0   My_code     
+     emergency_ISR                             D962      1F      31       0   My_code     
+     EXIT                                      D981       5       5       0   My_code     
+- VARIABLES:
+     val1                                      D85E       4       4       2   MY_Constant 
+     second                                     517       2       2       7   MY_VARIABLE 
+     seq_count                                  519       2       2       5   MY_VARIABLE 
+     travel_count                               51B       2       2       4   MY_VARIABLE 
+     dino_count                                 51D       2       2       4   MY_VARIABLE 
+     hunger1                                    51F       1       1       8   MY_VARIABLE 
+     hunger2                                    520       1       1       8   MY_VARIABLE 
+     hunger3                                    521       1       1       8   MY_VARIABLE 
+     anger1                                     522       1       1       6   MY_VARIABLE 
+     anger2                                     523       1       1       7   MY_VARIABLE 
+     anger3                                     524       1       1       5   MY_VARIABLE 
+     lockdown                                   525       2       2       4   MY_VARIABLE 
+MODULE:                 -- Gameover.asm.o --
+- PROCEDURES:
+     Gameover                                  D76C      D9     217       1   MY_CODE     
+- VARIABLES:
+MODULE:                 -- IRQ_ISR.asm.o --
+- PROCEDURES:
+     IRQ_ISR                                   D845       E      14       0   MY_CODE     
+     END                                       D853       1       1       0   MY_CODE     
+- VARIABLES:
+     button_val                                 527       2       2       2   MY_VARIABLE 
+
+*********************************************************************************************
+MODULE STATISTIC
+  Name                                      Data   Code  Const
+---------------------------------------------------------------------------------------------
+  main.asm.o                                   0    800     36
+  KeyPad.asm.o                                 1     88      0
+  lcddisp.c.o                                  8    243      0
+  potentiometer.c.o                            9     24      0
+  traveling.asm.o                              0    454      1
+  Pen3.asm.o                                   0    597      9
+  Pen2.asm.o                                   0    597      9
+  Pen1.asm.o                                   0    597      9
+  feed1.asm.o                                  0    592      0
+  feed2.asm.o                                  0    592      0
+  feed3.asm.o                                  0    592      0
+  SendsChr.c.o                                 5     34      0
+  Delay2.asm.o                                 0      9      0
+  roar1.asm.o                                  0     21      0
+  roar2.asm.o                                  0     21      0
+  roar3.asm.o                                  0     21      0
+  emergency_menu.asm.o                         0    659      1
+  RTI_ISR.asm.o                               16    292      4
+  Gameover.asm.o                               0    217      0
+  IRQ_ISR.asm.o                                2     15      0
+  other                                      256      6      0
+
+*********************************************************************************************
+SECTION USE IN OBJECT-ALLOCATION SECTION
+---------------------------------------------------------------------------------------------
+SECTION: ".text"
+  IRQCR RTIFLG delay_ms init_LCD display_string Delay epulse sendCommand 
+  read_pot SendsChr PlayTone 
+SECTION: ".bss"
+  data _DDRAD _PTAD _DDRM _PTM _ATDCTL23 _ATDCTL45 _ATDSTAT0 _ATDDR0 tone 
+  tone_count _PTT 
+SECTION: ".init"
+  main _Startup Entry pass1 pass2 pass3 pass4 MainMenu option2 option3 option4 
+  check2 check3 check4 
+SECTION: "MY_EXTENDED_RAM"
+  keyval disp travel emergency_flag travel_flag seq1 seq1 seq1 
+SECTION: "MY_CONSTANT"
+  lut seq KeyPad st Scan lutloop store 
+SECTION: "MY_VAR"
+  value 
+SECTION: ".common"
+  pot_value 
+SECTION: "MY_CODE"
+  traveling start pen_select pen1 pen2 pen3 end Pen3 option2 option3 option4 
+  check2 check3 check4 Pen2 option2 option3 option4 check2 check3 check4 Pen1 
+  option2 option3 option4 check2 check3 check4 feed1 option2 option3 option4 
+  check2 check3 check4 feed2 option2 option3 option4 check2 check3 check4 feed3 
+  option2 option3 option4 check2 check3 check4 roar1 nextval roar2 nextval 
+  roar3 nextval emergency_menu button_loop pass1 pass2 pass3 pass4 end Gameover 
+  IRQ_ISR END 
+SECTION: "Delay2.asm._SEC000000"
+  Delay2 loop 
+SECTION: "My_Variable"
+  var_1 
+SECTION: "MY_Constant"
+  val1 
+SECTION: "My_code"
+  RTI_ISR danger travel_ISR dino_ISR check2 check3 set_emergency1 
+  set_emergency2 set_emergency3 emergency_ISR EXIT 
+SECTION: "MY_VARIABLE"
+  second seq_count travel_count dino_count hunger1 hunger2 hunger3 anger1 
+  anger2 anger3 lockdown button_val 
+
+*********************************************************************************************
+OBJECT LIST SORTED BY ADDRESS
+     Name                                      Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+     IRQCR                                       1E       0       0       0   .text       
+     RTIFLG                                      37       0       0       1   .text       
+     data                                       500       2       2       4   .bss        
+     _DDRAD                                     502       2       2       1   .bss        
+     _PTAD                                      504       2       2       4   .bss        
+     _DDRM                                      506       1       1       1   .bss        
+     _PTM                                       507       1       1       5   .bss        
+     _ATDCTL23                                  508       2       2       1   .bss        
+     _ATDCTL45                                  50A       2       2       1   .bss        
+     _ATDSTAT0                                  50C       1       1       1   .bss        
+     _ATDDR0                                    50D       2       2       1   .bss        
+     tone                                       50F       2       2       2   .bss        
+     tone_count                                 511       2       2       3   .bss        
+     _PTT                                       513       1       1       2   .bss        
+     value                                      514       1       1       2   MY_VAR      
+     pot_value                                  515       2       2       9   .common     
+     second                                     517       2       2       7   MY_VARIABLE 
+     seq_count                                  519       2       2       5   MY_VARIABLE 
+     travel_count                               51B       2       2       4   MY_VARIABLE 
+     dino_count                                 51D       2       2       4   MY_VARIABLE 
+     hunger1                                    51F       1       1       8   MY_VARIABLE 
+     hunger2                                    520       1       1       8   MY_VARIABLE 
+     hunger3                                    521       1       1       8   MY_VARIABLE 
+     anger1                                     522       1       1       6   MY_VARIABLE 
+     anger2                                     523       1       1       7   MY_VARIABLE 
+     anger3                                     524       1       1       5   MY_VARIABLE 
+     lockdown                                   525       2       2       4   MY_VARIABLE 
+     button_val                                 527       2       2       2   MY_VARIABLE 
+     main                                      C000       0       0       0   .init       
+     _Startup                                  C000       0       0       0   .init       
+     Entry                                     C000     111     273       0   .init       
+     pass1                                     C111      18      24       0   .init       
+     pass2                                     C129      18      24       0   .init       
+     pass3                                     C141      18      24       0   .init       
+     pass4                                     C159      B8     184       0   .init       
+     MainMenu                                  C211      BB     187       0   .init       
+     option2                                   C2CC      13      19       0   .init       
+     option3                                   C2DF      13      19       0   .init       
+     option4                                   C2F2      12      18       0   .init       
+     check2                                    C304       C      12       0   .init       
+     check3                                    C310       C      12       0   .init       
+     check4                                    C31C       4       4       0   .init       
+     delay_ms                                  C320      17      23       5   .text       
+     init_LCD                                  C337      52      82       1   .text       
+     display_string                            C389      38      56      43   .text       
+     Delay                                     C3C1      1F      31       1   .text       
+     epulse                                    C3E0      24      36       3   .text       
+     sendCommand                               C404       F      15       7   .text       
+     read_pot                                  C413      18      24       8   .text       
+     SendsChr                                  C42B       8       8       6   .text       
+     PlayTone                                  C433      1A      26       6   .text       
+     keyval                                    C44D       1       1      17   MY_EXTENDED_RAM
+     disp                                      C44E      21      33     937   MY_EXTENDED_RAM
+     travel                                    C46F       1       1       8   MY_EXTENDED_RAM
+     emergency_flag                            C470       1       1       9   MY_EXTENDED_RAM
+     travel_flag                               C471       1       1       4   MY_EXTENDED_RAM
+     seq1                                      C472       9       9       1   MY_EXTENDED_RAM
+     seq1                                      C47B       9       9       1   MY_EXTENDED_RAM
+     seq1                                      C484       9       9       1   MY_EXTENDED_RAM
+     lut                                       C48D      10      16       1   MY_CONSTANT 
+     seq                                       C49D       4       4       2   MY_CONSTANT 
+     KeyPad                                    C4A1      12      18      15   MY_CONSTANT 
+     st                                        C4B3       3       3       0   MY_CONSTANT 
+     Scan                                      C4B6      1E      30       0   MY_CONSTANT 
+     lutloop                                   C4D4       A      10       0   MY_CONSTANT 
+     store                                     C4DE       7       7       0   MY_CONSTANT 
+     traveling                                 C4E5      B5     181       6   MY_CODE     
+     start                                     C59A      F1     241       0   MY_CODE     
+     pen_select                                C68B      16      22       0   MY_CODE     
+     pen1                                      C6A1       3       3       0   MY_CODE     
+     pen2                                      C6A4       3       3       0   MY_CODE     
+     pen3                                      C6A7       3       3       0   MY_CODE     
+     end                                       C6AA       1       1       0   MY_CODE     
+     Pen3                                      C6AB      C6     198       1   MY_CODE     
+     option2                                   C771      B5     181       0   MY_CODE     
+     option3                                   C826      B5     181       0   MY_CODE     
+     option4                                   C8DB       D      13       0   MY_CODE     
+     check2                                    C8E8       7       7       0   MY_CODE     
+     check3                                    C8EF       D      13       0   MY_CODE     
+     check4                                    C8FC       4       4       0   MY_CODE     
+     Pen2                                      C900      C6     198       1   MY_CODE     
+     option2                                   C9C6      B5     181       0   MY_CODE     
+     option3                                   CA7B      B5     181       0   MY_CODE     
+     option4                                   CB30       D      13       0   MY_CODE     
+     check2                                    CB3D       7       7       0   MY_CODE     
+     check3                                    CB44       D      13       0   MY_CODE     
+     check4                                    CB51       4       4       0   MY_CODE     
+     Pen1                                      CB55      C6     198       1   MY_CODE     
+     option2                                   CC1B      B5     181       0   MY_CODE     
+     option3                                   CCD0      B5     181       0   MY_CODE     
+     option4                                   CD85       D      13       0   MY_CODE     
+     check2                                    CD92       7       7       0   MY_CODE     
+     check3                                    CD99       D      13       0   MY_CODE     
+     check4                                    CDA6       4       4       0   MY_CODE     
+     feed1                                     CDAA      BB     187       1   MY_CODE     
+     option2                                   CE65      B5     181       0   MY_CODE     
+     option3                                   CF1A      B5     181       0   MY_CODE     
+     option4                                   CFCF      11      17       0   MY_CODE     
+     check2                                    CFE0       B      11       0   MY_CODE     
+     check3                                    CFEB       E      14       0   MY_CODE     
+     check4                                    CFF9       1       1       0   MY_CODE     
+     feed2                                     CFFA      BB     187       1   MY_CODE     
+     option2                                   D0B5      B5     181       0   MY_CODE     
+     option3                                   D16A      B5     181       0   MY_CODE     
+     option4                                   D21F      11      17       0   MY_CODE     
+     check2                                    D230       B      11       0   MY_CODE     
+     check3                                    D23B       E      14       0   MY_CODE     
+     check4                                    D249       1       1       0   MY_CODE     
+     feed3                                     D24A      BB     187       1   MY_CODE     
+     option2                                   D305      B5     181       0   MY_CODE     
+     option3                                   D3BA      B5     181       0   MY_CODE     
+     option4                                   D46F      11      17       0   MY_CODE     
+     check2                                    D480       B      11       0   MY_CODE     
+     check3                                    D48B       E      14       0   MY_CODE     
+     check4                                    D499       1       1       0   MY_CODE     
+     roar1                                     D49A       4       4       3   MY_CODE     
+     nextval                                   D49E      11      17       0   MY_CODE     
+     roar2                                     D4AF       4       4       3   MY_CODE     
+     nextval                                   D4B3      11      17       0   MY_CODE     
+     roar3                                     D4C4       4       4       3   MY_CODE     
+     nextval                                   D4C8      11      17       0   MY_CODE     
+     emergency_menu                            D4D9      BC     188       3   MY_CODE     
+     button_loop                               D595      B2     178       0   MY_CODE     
+     pass1                                     D647      18      24       0   MY_CODE     
+     pass2                                     D65F      18      24       0   MY_CODE     
+     pass3                                     D677      18      24       0   MY_CODE     
+     pass4                                     D68F      B8     184       0   MY_CODE     
+     end                                       D747      25      37       0   MY_CODE     
+     Gameover                                  D76C      D9     217       1   MY_CODE     
+     IRQ_ISR                                   D845       E      14       0   MY_CODE     
+     END                                       D853       1       1       0   MY_CODE     
+     Delay2                                    D854       4       4       1   Delay2.asm._SEC000000
+     loop                                      D858       5       5       0   Delay2.asm._SEC000000
+     var_1                                     D85D       1       1       1   My_Variable 
+     val1                                      D85E       4       4       2   MY_Constant 
+     RTI_ISR                                   D862      33      51       0   My_code     
+     danger                                    D895      27      39       0   My_code     
+     travel_ISR                                D8BC      1D      29       0   My_code     
+     dino_ISR                                  D8D9      44      68       0   My_code     
+     check2                                    D91D       8       8       0   My_code     
+     check3                                    D925      14      20       0   My_code     
+     set_emergency1                            D939       F      15       0   My_code     
+     set_emergency2                            D948       F      15       0   My_code     
+     set_emergency3                            D957       B      11       0   My_code     
+     emergency_ISR                             D962      1F      31       0   My_code     
+     EXIT                                      D981       5       5       0   My_code     
+
+*********************************************************************************************
+UNUSED-OBJECTS SECTION
+---------------------------------------------------------------------------------------------
+
+*********************************************************************************************
+COPYDOWN SECTION
+---------------------------------------------------------------------------------------------
+
+*********************************************************************************************
+OBJECT-DEPENDENCIES SECTION
+---------------------------------------------------------------------------------------------
+Entry                     USES __SEG_END_SSTACK emergency_flag travel second 
+                                seq_count travel_count dino_count hunger1 hunger2 
+                                hunger3 anger1 anger2 anger3 lockdown init_LCD keyval 
+                                disp display_string 
+pass1                     USES display_string KeyPad keyval disp 
+pass2                     USES KeyPad display_string keyval disp 
+pass3                     USES KeyPad display_string keyval disp 
+pass4                     USES KeyPad display_string keyval disp 
+MainMenu                  USES read_pot pot_value disp display_string 
+option2                   USES disp display_string 
+option3                   USES disp display_string 
+option4                   USES KeyPad keyval travel traveling 
+check2                    USES travel traveling 
+check3                    USES travel traveling 
+init_LCD                  USES _DDRAD _PTAD _DDRM delay_ms _PTM data 
+                                sendCommand epulse 
+display_string            USES sendCommand data _PTAD epulse 
+epulse                    USES data _PTM delay_ms 
+sendCommand               USES data _PTAD epulse 
+read_pot                  USES _ATDCTL23 Delay _ATDCTL45 _ATDSTAT0 _ATDDR0 
+                                pot_value 
+SendsChr                  USES tone 
+PlayTone                  USES tone_count tone _PTT 
+st                        USES seq 
+Scan                      USES seq Delay2 value lut 
+lutloop                   USES value 
+store                     USES keyval 
+traveling                 USES disp display_string 
+start                     USES travel_flag disp read_pot pot_value 
+                                display_string 
+pen_select                USES travel 
+pen1                      USES Pen1 
+pen2                      USES Pen2 
+pen3                      USES Pen3 
+Pen3                      USES hunger3 seq1 read_pot pot_value disp 
+                                display_string 
+option2                   USES disp display_string 
+option3                   USES disp display_string 
+option4                   USES KeyPad keyval feed3 
+check2                    USES roar3 
+check3                    USES travel traveling 
+Pen2                      USES hunger2 seq1 read_pot pot_value disp 
+                                display_string 
+option2                   USES disp display_string 
+option3                   USES disp display_string 
+option4                   USES KeyPad keyval feed2 
+check2                    USES roar2 
+check3                    USES travel traveling 
+Pen1                      USES hunger1 seq1 read_pot pot_value disp 
+                                display_string 
+option2                   USES disp display_string 
+option3                   USES disp display_string 
+option4                   USES KeyPad keyval feed1 
+check2                    USES roar1 
+check3                    USES travel traveling 
+feed1                     USES read_pot pot_value disp display_string 
+option2                   USES disp display_string 
+option3                   USES disp display_string 
+option4                   USES KeyPad keyval hunger1 
+check2                    USES anger1 
+check3                    USES anger1 hunger1 
+feed2                     USES read_pot pot_value disp display_string 
+option2                   USES disp display_string 
+option3                   USES disp display_string 
+option4                   USES KeyPad keyval hunger2 
+check2                    USES anger2 
+check3                    USES anger2 hunger2 
+feed3                     USES read_pot pot_value disp display_string 
+option2                   USES disp display_string 
+option3                   USES disp display_string 
+option4                   USES KeyPad keyval hunger3 
+check2                    USES anger3 
+check3                    USES anger3 hunger3 
+nextval                   USES SendsChr PlayTone 
+nextval                   USES SendsChr PlayTone 
+nextval                   USES SendsChr PlayTone 
+emergency_menu            USES var_1 disp display_string 
+button_loop               USES button_val disp display_string 
+pass1                     USES display_string KeyPad keyval disp 
+pass2                     USES KeyPad display_string keyval disp 
+pass3                     USES KeyPad display_string keyval disp 
+pass4                     USES KeyPad display_string keyval disp 
+end                       USES emergency_flag hunger1 hunger2 hunger3 anger1 
+                                anger2 anger3 
+Gameover                  USES disp display_string roar1 roar2 roar3 
+                                emergency_flag hunger1 hunger2 hunger3 anger1 anger2 anger3 
+IRQ_ISR                   USES emergency_flag button_val 
+RTI_ISR                   USES emergency_flag second val1 seq_count 
+danger                    USES second val1 seq_count 
+travel_ISR                USES travel_flag travel_count 
+dino_ISR                  USES hunger1 hunger2 hunger3 anger1 anger2 
+                                dino_count 
+check2                    USES hunger3 
+check3                    USES dino_count hunger1 
+set_emergency1            USES emergency_flag roar1 emergency_menu 
+set_emergency2            USES emergency_flag roar2 emergency_menu 
+set_emergency3            USES emergency_flag roar3 emergency_menu 
+emergency_ISR             USES emergency_flag lockdown Gameover 
+EXIT                      USES RTIFLG 
+
+*********************************************************************************************
+DEPENDENCY TREE
+*********************************************************************************************
+ main and _Startup Group
+ | 
+ +- main                
+ |    
+ +- Entry               
+    | 
+    +- init_LCD            
+    |  | 
+    |  +- delay_ms            
+    |  |    
+    |  +- sendCommand         
+    |  |  | 
+    |  |  +- epulse              
+    |  |     | 
+    |  |     +- delay_ms             (see above)
+    |  |        
+    |  +- epulse               (see above)
+    |     
+    +- display_string      
+       | 
+       +- sendCommand          (see above)
+       |  
+       +- epulse               (see above)
+          
+ RTI_ISR             
+   
+ IRQ_ISR             
+   
+*********************************************************************************************
+STATISTIC SECTION
+---------------------------------------------------------------------------------------------
+
+ExeFile:
+--------
+Number of blocks to be downloaded: 7
+Total size of all blocks to be downloaded: 6540
+
